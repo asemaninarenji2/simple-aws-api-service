@@ -13,7 +13,10 @@ public class TestControllerAPI {
     public String test(@PathParam("id") String id){
         return "TEST SUCCESS";
     }
-
+    @GetMapping(value = "/test2/{id}")
+    public String tes2(@PathParam("id") String id){
+        return "TEST 2 SUCCESS";
+    }
 
 
 }
